@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dibuja con el mouse perrito</title>
+    <style type="text/css">
+        body{
+            background-color: silver;
+            font-family: Helvetica;
+            font-size: large;
+        }
+        canvas{
+            background-color: #f0f8ff;
+           
+        }
+        input[type=checkbox] {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+
+    <canvas width="800" height="600" id="area_de_dibujo"></canvas> 
+    <h1>Trainee Paint</h1>
+    <p>Utilize el <strong>mouse</strong> para dibujar en el lienzo.</p>
+    <p><strong>Color</strong> del trazo. 
+    <input type="color" id="color_button" value="#000000"/> 
+    <strong> Borrador</strong> <input type="checkbox" id="check_button" value="off"/></p>
+    <p><strong>Grosor</strong> del trazo. <input type="range" id="range_button" value="3"/> </p>
+    <input type="button" id="clean" value="Limpiar lienzo"/>
+    <script src="drawing.js"></script>
+</body>
+</html>
